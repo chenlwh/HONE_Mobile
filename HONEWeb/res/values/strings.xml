@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HONEWeb</string>
+    <string name="hello_world">E-mail:</string>
+    <string name="title_activity_result">ResultActivity</string>
+
+</resources>
