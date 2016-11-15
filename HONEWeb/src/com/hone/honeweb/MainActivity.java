@@ -14,7 +14,7 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 	private TextView textView;
 	private TextView editView;
-// test by petergaoaa
+// test by petergaoa
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
