@@ -10,11 +10,12 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-// today push as test
+// chenlwh push as test
+//521clcn
 public class MainActivity extends Activity {
 	private TextView textView;
 	private TextView editView;
-
+// test by petergao for push
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
