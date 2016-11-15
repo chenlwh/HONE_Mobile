@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 // chenlwh push as test aa
+//521clcn
 public class MainActivity extends Activity {
 	private TextView textView;
 	private TextView editView;
