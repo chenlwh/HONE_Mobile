@@ -7,6 +7,7 @@ import android.view.MenuItem;
 
 public class TeamActivity extends Activity {
 
+	//wendy test
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
