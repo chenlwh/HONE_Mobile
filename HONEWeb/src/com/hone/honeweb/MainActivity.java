@@ -10,7 +10,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-// today push as test
+// chenlwh push as test
 public class MainActivity extends Activity {
 	private TextView textView;
 	private TextView editView;
