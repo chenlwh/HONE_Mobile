@@ -2,9 +2,7 @@
 <resources>
 
     <string name="app_name">HONEWeb</string>
-    <string name="hello_world">E-mail:</string>
-    <string name="title_activity_result">ResultActivity</string>
-    <string name="title_activity_team">TeamActivity</string>
-    <string name="action_settings">Settings</string>
+    <string name="welcome">welcome</string>
+    <string name="team">team introduction</string>
 
 </resources>
