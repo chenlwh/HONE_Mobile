@@ -4,5 +4,13 @@
     <string name="app_name">HONEWeb</string>
     <string name="welcome">welcome</string>
     <string name="team">team introduction</string>
-
+    <string name="background_color">#3399CC</string>
+	<string name="text_color_btn">#FFFFFF</string>
+ 	<string name="text_color_exp">#ADADAD</string>
+ 	<string name="slide_arrow_left">slide_arrow1.png</string>
+	<string name="slide_arrow_right">slide_arrow2.png</string>
+	<string name="slide_btn">slide_button2.png</string>
+	
+	
+	
 </resources>
