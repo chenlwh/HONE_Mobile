@@ -4,4 +4,12 @@
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
 
+    <MediaController
+        android:id="@+id/mediaController1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/welcome"
+        android:orientation="vertical" >
+    </MediaController>
+
 </RelativeLayout>

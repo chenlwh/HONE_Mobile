@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+
 public class WelcomeActivity extends Activity {
 //Jane's page
 	@Override
@@ -12,7 +13,7 @@ public class WelcomeActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_welcome);
 		
-		// 3 seconds redirect to teamactivety
+		// 3 seconds redirect to TeamActivety
 		new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -22,7 +23,6 @@ public class WelcomeActivity extends Activity {
                 finish();
             }
         }, 3000);
-		
 		
 		
 	}
