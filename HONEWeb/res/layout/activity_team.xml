@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3399CC"
+    android:background="@drawable/team"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -12,6 +12,30 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="62dp"
+        android:text="Netherlands HONELINK Mailbox/Netherlands/IBM"
+        android:textColor="@color/text_color_btn"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="AMS HONE team is a part of CIO Sales Support Tribe. We are categorized into Business Applications (including Publications) and Infrastructure Applications.Do you have new requests or changes for our applications? Then please contact:"
+        android:textColor="@color/text_color_btn" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_centerVertical="true"
+        android:background="@drawable/slide_arrow2" />
 
 </RelativeLayout>
