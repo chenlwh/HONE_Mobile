@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-  	<string name="app_name">HONEWeb</string>
-  	<string name="welcome">welcome</string>
-    	<string name="team">team introduction</string>
-    	<color name="background_color">#3399CC</color>
-	<color name="text_color_btn">#FFFFFF</color>
- 	<color name="text_color_exp">#ADADAD</color>
-	
-	
-	
+    <string name="app_name">HONEWeb</string>
+    <string name="welcome">welcome</string>
+    <string name="team">team introduction</string>
+
+    <color name="background_color">#3399CC</color>
+    <color name="text_color_btn">#FFFFFF</color>
+    <color name="text_color_exp">#ADADAD</color>
+
+    <string name="title_activity_function">FunctionActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
 </resources>
