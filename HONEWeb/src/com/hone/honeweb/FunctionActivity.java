@@ -1,9 +1,13 @@
 package com.hone.honeweb;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 public class FunctionActivity extends Activity {
 
@@ -12,7 +16,31 @@ public class FunctionActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_function);
 		
+		Button previous = (Button) findViewById(R.id.button1);
+		Button next = (Button) findViewById(R.id.button2);
+		previous.setOnClickListener(previousListener);
+		next.setOnClickListener(nextListener);
 	}
+	
+	private OnClickListener previousListener = new OnClickListener() {
+		
+		@Override
+		public void onClick(View arg0) {
+			// TODO Auto-generated method stub
+			Intent intent = new Intent(FunctionActivity.this, TeamActivity.class);	    
+		    startActivity(intent);
+	    }
+    };
+    
+    private OnClickListener nextListener = new OnClickListener() {
+		
+		@Override
+		public void onClick(View arg0) {
+			// TODO Auto-generated method stub
+			Intent intent = new Intent(FunctionActivity.this, TeamActivity.class);	    
+		    startActivity(intent);
+	    }
+    };
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

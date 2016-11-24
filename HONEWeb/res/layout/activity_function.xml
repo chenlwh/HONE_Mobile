@@ -10,8 +10,30 @@
     tools:context="com.hone.honeweb.FunctionActivity" >
 
     <TextView
+        android:id="@+id/TextView01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
+        android:text="Honeweb provide Business Partners and customers an opportunity to order or view the hardware, software configurations of IBM products. Honeweb portal is exclusively meant for Internal IBM users"
+        android:textColor="@color/text_color_btn" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_alignRight="@+id/TextView01"
+        android:layout_centerVertical="true"
+        android:background="@drawable/slide_arrow2" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/slide_arrow1" />
 
 </RelativeLayout>
