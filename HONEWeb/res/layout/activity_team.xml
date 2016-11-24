@@ -18,6 +18,7 @@
         android:layout_marginBottom="62dp"
         android:text="Netherlands HONELINK Mailbox/Netherlands/IBM"
         android:textColor="@color/text_color_btn"
+        android:layout_centerVertical="true"
         android:textSize="15sp" />
 
     <TextView
@@ -27,6 +28,7 @@
         android:layout_above="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
+        android:scaleType="fitXY"
         android:text="AMS HONE team is a part of CIO Sales Support Tribe. We are categorized into Business Applications (including Publications) and Infrastructure Applications.Do you have new requests or changes for our applications? Then please contact:"
         android:textColor="@color/text_color_btn" />
 
