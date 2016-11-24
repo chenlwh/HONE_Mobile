@@ -9,7 +9,7 @@
     <color name="text_color_btn">#FFFFFF</color>
     <color name="text_color_exp">#ADADAD</color>
 
-    <string name="title_activity_function">FunctionActivity</string>
+    <string name="title_activity_function">Hone Intruduction</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
