@@ -1,15 +1,24 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
 
-    <MediaController
-        android:id="@+id/mediaController1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/welcome"
-        android:orientation="vertical" >
-    </MediaController>
+      <ImageView
+          android:id="@+id/welcome_imageview"
+          android:layout_width="match_parent"
+          android:scaleType="fitXY"  
+          android:layout_height="wrap_content"
+          android:adjustViewBounds="true"
+          android:src="@drawable/welcome" />
+
+      <Button
+          android:id="@+id/skip_button"
+          style="?android:attr/buttonStyleSmall"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          android:background="@drawable/skip" />
 
 </RelativeLayout>
