@@ -37,7 +37,7 @@ public class FunctionActivity extends Activity {
 		@Override
 		public void onClick(View arg0) {
 			// TODO Auto-generated method stub
-			Intent intent = new Intent(FunctionActivity.this, TeamActivity.class);	    
+			Intent intent = new Intent(FunctionActivity.this, MenuActivity.class);	    
 		    startActivity(intent);
 	    }
     };
