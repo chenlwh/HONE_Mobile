@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="titleColor">#000080</color>
+    <color name="itemColor">#0000EE</color>
+    
+    <string name="tileSize">36sp</string>
+    <string name="itemSize">24sp</string>
+    
+    <style name="familyName">sans</style>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">A Slide</string>
+    <string name="hello_world">Intranet Email:</string>
+    <string name="sign_in">Sign</string>
+    <string name="button">submitButton</string>
+    <string name="sign_result">Sign Result</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+</resources>
