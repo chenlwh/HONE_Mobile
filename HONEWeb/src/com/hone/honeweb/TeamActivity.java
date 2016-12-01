@@ -1,16 +1,23 @@
 package com.hone.honeweb;
 
+import com.hone.util.AppUtil;
+
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.GestureDetector;
+import android.view.GestureDetector.OnGestureListener;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnTouchListener;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
-public class TeamActivity extends Activity {
-
+public class TeamActivity extends Activity implements OnTouchListener, OnGestureListener{
+	private GestureDetector gd = null;
+	@SuppressWarnings("deprecation")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -19,6 +26,12 @@ public class TeamActivity extends Activity {
         Button nextpage = (Button) findViewById(R.id.button1);
 		
 		nextpage.setOnClickListener(nextpageListener);
+		
+		gd = new GestureDetector((OnGestureListener) this);
+		
+		RelativeLayout ll = (RelativeLayout) findViewById(R.id.team_layout);
+		ll.setOnTouchListener(this);
+		ll.setLongClickable(true);
 	}
 
     private OnClickListener nextpageListener = new OnClickListener() {
@@ -30,21 +43,53 @@ public class TeamActivity extends Activity {
 		    startActivity(intent);
 	    }
     };
-	
+
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		
-		return true;
+	public boolean onDown(MotionEvent e) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
+	public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+		if(e1.getX() - e2.getX() > AppUtil.FLING_MIN_DISTANCE&&Math.abs(velocityX) > AppUtil.FLING_MIN_VELOCITY){
+			Intent intent = new Intent(TeamActivity.this,FunctionActivity.class);
+			startActivity(intent);
+//			 Toast.makeText(this, "向左手势", Toast.LENGTH_SHORT).show(); 
+
+		}
 		
-		return super.onOptionsItemSelected(item);
+		return false;
+	}
+
+	@Override
+	public void onLongPress(MotionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void onShowPress(MotionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean onSingleTapUp(MotionEvent e) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@SuppressLint("ClickableViewAccessibility")
+	@Override
+	public boolean onTouch(View v, MotionEvent event) {
+		// TODO Auto-generated method stub
+		return gd.onTouchEvent(event);
 	}
 }
