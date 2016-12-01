@@ -34,6 +34,10 @@
             android:name=".MenuActivity"
             android:label="@string/title_activity_menu" >
         </activity>
+        <activity
+            android:name=".OopsActivity"
+            android:label="@string/title_activity_oops" >
+        </activity>
     </application>
 
 </manifest>
