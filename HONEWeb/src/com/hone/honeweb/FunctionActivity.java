@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class FunctionActivity extends Activity {
 
@@ -20,6 +21,12 @@ public class FunctionActivity extends Activity {
 		Button next = (Button) findViewById(R.id.button2);
 		previous.setOnClickListener(previousListener);
 		next.setOnClickListener(nextListener);
+		Button price = (Button) findViewById(R.id.button3);
+		Button books = (Button) findViewById(R.id.button4);
+		Button order = (Button) findViewById(R.id.button5);
+		price.setOnClickListener(priceListener);
+		books.setOnClickListener(booksListener);
+		order.setOnClickListener(orderListener);
 	}
 	
 	private OnClickListener previousListener = new OnClickListener() {
@@ -42,6 +49,36 @@ public class FunctionActivity extends Activity {
 	    }
     };
 
+    String price = (String) this.getResources().getText(R.string.function_price);
+    private OnClickListener priceListener = new OnClickListener() {
+		
+		@Override
+		public void onClick(View arg0) {
+			TextView tv = (TextView)findViewById(R.id.textView2);
+			tv.setText(price);
+	    }
+    };
+    
+    String books = (String) this.getResources().getText(R.string.function_books);
+    private OnClickListener booksListener = new OnClickListener() {
+		
+		@Override
+		public void onClick(View arg0) {
+			TextView tv = (TextView)findViewById(R.id.textView2);
+			tv.setText(books);
+	    }
+    };
+    
+    String order = (String) this.getResources().getText(R.string.function_order);
+    private OnClickListener orderListener = new OnClickListener() {
+		
+		@Override
+		public void onClick(View arg0) {
+			TextView tv = (TextView)findViewById(R.id.textView2);
+			tv.setText(order);
+	    }
+    };
+    
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
