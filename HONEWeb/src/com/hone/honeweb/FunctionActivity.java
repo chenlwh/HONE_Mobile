@@ -49,32 +49,41 @@ public class FunctionActivity extends Activity {
 	    }
     };
 
-    String price = (String) this.getResources().getText(R.string.function_price);
+    String price = “IBM’ers, Customers and Business 
+Partners need access to the prices
+Of Hardware, Software  and 
+Services. Price applications can 
+Be used to look up the list price 
+Of single IBM items.
+”;
     private OnClickListener priceListener = new OnClickListener() {
 		
 		@Override
 		public void onClick(View arg0) {
-			TextView tv = (TextView)findViewById(R.id.textView2);
+			TextView tv = (TextView)findViewById(R.id.Textview2);
 			tv.setText(price);
 	    }
     };
     
-    String books = (String) this.getResources().getText(R.string.function_books);
+    String books = “The IBM Publication Centre supports IBM e-business strategy for all users  
+	by supplying a central portal for  accessing and downloading all IBM publications.”;
     private OnClickListener booksListener = new OnClickListener() {
 		
 		@Override
 		public void onClick(View arg0) {
-			TextView tv = (TextView)findViewById(R.id.textView2);
+			TextView tv = (TextView)findViewById(R.id.Textview2);
 			tv.setText(books);
 	    }
     };
     
-    String order = (String) this.getResources().getText(R.string.function_order);
+    String order = “A Configuration(CFReport) can be Subm-
+Itted to the order submission system, 
+which will send it to  the fulfillment system.”;
     private OnClickListener orderListener = new OnClickListener() {
 		
 		@Override
 		public void onClick(View arg0) {
-			TextView tv = (TextView)findViewById(R.id.textView2);
+			TextView tv = (TextView)findViewById(R.id.Textview2);
 			tv.setText(order);
 	    }
     };
