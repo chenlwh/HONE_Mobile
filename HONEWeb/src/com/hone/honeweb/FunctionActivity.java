@@ -129,6 +129,7 @@ public class FunctionActivity extends Activity implements OnTouchListener, OnGes
 		if(e1.getX() - e2.getX() > AppUtil.FLING_MIN_DISTANCE&&Math.abs(velocityX) > AppUtil.FLING_MIN_VELOCITY)
 		{
 			Intent intent = new Intent(FunctionActivity.this,MenuActivity.class);
+			intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
 			startActivity(intent);
 
 		}
@@ -136,6 +137,7 @@ public class FunctionActivity extends Activity implements OnTouchListener, OnGes
 			
 			//切换Activity
 			Intent intent = new Intent(FunctionActivity.this, TeamActivity.class);
+			intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
 			startActivity(intent);
 		}
 		

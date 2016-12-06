@@ -40,6 +40,8 @@ public class TeamActivity extends Activity implements OnTouchListener, OnGesture
 		public void onClick(View arg0) {
 			// TODO Auto-generated method stub
 			Intent intent = new Intent(TeamActivity.this,FunctionActivity.class);	    
+			intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+			intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
 		    startActivity(intent);
 	    }
     };
@@ -54,6 +56,8 @@ public class TeamActivity extends Activity implements OnTouchListener, OnGesture
 	public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
 		if(e1.getX() - e2.getX() > AppUtil.FLING_MIN_DISTANCE&&Math.abs(velocityX) > AppUtil.FLING_MIN_VELOCITY){
 			Intent intent = new Intent(TeamActivity.this,FunctionActivity.class);
+			intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+			intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
 			startActivity(intent);
 //			 Toast.makeText(this, "向左手势", Toast.LENGTH_SHORT).show(); 
 
