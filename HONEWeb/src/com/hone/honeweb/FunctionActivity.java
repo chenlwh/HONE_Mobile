@@ -49,7 +49,17 @@ public class FunctionActivity extends Activity {
 	    }
     };
 
+<<<<<<< HEAD
     String price = "IBM’ers, Customers and Business Partners need access to the pricesOf Hardware, Software  and Services. Price applications can Be used to look up the list price Of single IBM items.";
+=======
+    String price = “IBM’ers, Customers and Business 
+Partners need access to the prices
+Of Hardware, Software  and 
+Services. Price applications can 
+Be used to look up the list price 
+Of single IBM items.
+”;
+>>>>>>> branch 'master' of https://github.com/chenlwh/HONE_Mobile.git
     private OnClickListener priceListener = new OnClickListener() {
 		
 		@Override
@@ -59,7 +69,12 @@ public class FunctionActivity extends Activity {
 	    }
     };
     
+<<<<<<< HEAD
     String books = "The IBM Publication Centre supports IBM e-business strategy for all users  by supplying a central portal for  accessing and downloading all IBM publications.";
+=======
+    String books = “The IBM Publication Centre supports IBM e-business strategy for all users  
+	by supplying a central portal for  accessing and downloading all IBM publications.”;
+>>>>>>> branch 'master' of https://github.com/chenlwh/HONE_Mobile.git
     private OnClickListener booksListener = new OnClickListener() {
 		
 		@Override
@@ -69,7 +84,13 @@ public class FunctionActivity extends Activity {
 	    }
     };
     
+<<<<<<< HEAD
     String order = "A Configuration(CFReport) can be Submitted to the order submission system, which will send it to  the fulfillment system.";
+=======
+    String order = “A Configuration(CFReport) can be Subm-
+Itted to the order submission system, 
+which will send it to  the fulfillment system.”;
+>>>>>>> branch 'master' of https://github.com/chenlwh/HONE_Mobile.git
     private OnClickListener orderListener = new OnClickListener() {
 		
 		@Override
