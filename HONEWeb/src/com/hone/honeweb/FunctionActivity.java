@@ -64,7 +64,7 @@ public class FunctionActivity extends Activity implements OnTouchListener, OnGes
 	    }
     };
 
-    String price = "IBM’ers, Customers and Business Partners need access to the pricesOf Hardware, Software  and Services. Price applications can Be used to look up the list price Of single IBM items.";
+    String price = "IBMers, Customers and Business Partners need access to the pricesOf Hardware, Software  and Services. Price applications can Be used to look up the list price Of single IBM items.";
 
     private OnClickListener priceListener = new OnClickListener() {
 		
@@ -130,7 +130,6 @@ public class FunctionActivity extends Activity implements OnTouchListener, OnGes
 		{
 			Intent intent = new Intent(FunctionActivity.this,MenuActivity.class);
 			startActivity(intent);
-//			 Toast.makeText(this, "向左手势", Toast.LENGTH_SHORT).show(); 
 
 		}
 		else if (e2.getX()-e1.getX() > AppUtil.FLING_MIN_DISTANCE && Math.abs(velocityX) >AppUtil.FLING_MIN_VELOCITY) {
@@ -138,7 +137,6 @@ public class FunctionActivity extends Activity implements OnTouchListener, OnGes
 			//切换Activity
 			Intent intent = new Intent(FunctionActivity.this, TeamActivity.class);
 			startActivity(intent);
-//			Toast.makeText(this, "向右手势", Toast.LENGTH_SHORT).show();
 		}
 		
 		return false;
