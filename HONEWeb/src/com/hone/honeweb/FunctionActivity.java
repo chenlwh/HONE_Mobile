@@ -1,17 +1,26 @@
 package com.hone.honeweb;
 
+import com.hone.util.AppUtil;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.GestureDetector.OnGestureListener;
 import android.view.View.OnClickListener;
+import android.view.View.OnTouchListener;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class FunctionActivity extends Activity {
-
+public class FunctionActivity extends Activity implements OnTouchListener, OnGestureListener{
+	private GestureDetector gd = null;
+	@SuppressWarnings("deprecation")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -27,6 +36,12 @@ public class FunctionActivity extends Activity {
 		price.setOnClickListener(priceListener);
 		books.setOnClickListener(booksListener);
 		order.setOnClickListener(orderListener);
+		
+		gd = new GestureDetector((OnGestureListener) this);
+		
+		RelativeLayout ll = (RelativeLayout) findViewById(R.id.function_layout);
+		ll.setOnTouchListener(this);
+		ll.setLongClickable(true);
 	}
 	
 	private OnClickListener previousListener = new OnClickListener() {
@@ -100,5 +115,63 @@ public class FunctionActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public boolean onDown(MotionEvent e) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+		// TODO Auto-generated method stub
+		if(e1.getX() - e2.getX() > AppUtil.FLING_MIN_DISTANCE&&Math.abs(velocityX) > AppUtil.FLING_MIN_VELOCITY)
+		{
+			Intent intent = new Intent(FunctionActivity.this,MenuActivity.class);
+			startActivity(intent);
+//			 Toast.makeText(this, "向左手势", Toast.LENGTH_SHORT).show(); 
+
+		}
+		else if (e2.getX()-e1.getX() > AppUtil.FLING_MIN_DISTANCE && Math.abs(velocityX) >AppUtil.FLING_MIN_VELOCITY) {
+			
+			//切换Activity
+			Intent intent = new Intent(FunctionActivity.this, TeamActivity.class);
+			startActivity(intent);
+//			Toast.makeText(this, "向右手势", Toast.LENGTH_SHORT).show();
+		}
+		
+		return false;
+	}
+
+	@Override
+	public void onLongPress(MotionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void onShowPress(MotionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean onSingleTapUp(MotionEvent e) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@SuppressLint("ClickableViewAccessibility")
+	@Override
+	public boolean onTouch(View v, MotionEvent event) {
+		// TODO Auto-generated method stub
+		return gd.onTouchEvent(event);
 	}
 }
