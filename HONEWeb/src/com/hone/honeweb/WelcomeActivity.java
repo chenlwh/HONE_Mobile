@@ -12,6 +12,7 @@ import android.widget.Button;
 public class WelcomeActivity extends Activity {
 //Jane's page
 	private Button SkipButton;
+	private Handler handler;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -20,15 +21,8 @@ public class WelcomeActivity extends Activity {
 		SkipButton.setOnClickListener(skipButtonlistener);
 		
 		// 6 seconds redirect to TeamActivety
-		new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent i = new Intent(WelcomeActivity.this, TeamActivity.class);
-                startActivity(i);
-                //redirect to TeamActivity, then this page will disappear
-                finish();
-            }
-        }, 6000);
+		handler = new Handler();
+		handler.postDelayed(delayThread, 6000);
 		
 		
 	}
@@ -38,8 +32,19 @@ public class WelcomeActivity extends Activity {
 		public void onClick(View v) {
 				Intent skipToteam = new Intent(WelcomeActivity.this,TeamActivity.class);
 				startActivity(skipToteam);
+				handler.removeCallbacks(delayThread);
 				finish();
 		}
 	};
+	
+	private Runnable delayThread = new Runnable() {
+		public void run() {
+			Intent i = new Intent(WelcomeActivity.this, TeamActivity.class);
+            startActivity(i);
+            //redirect to TeamActivity, then this page will disappear
+            finish();
+		}
+	};
+	
 	
 }
