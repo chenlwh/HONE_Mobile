@@ -1,22 +1,22 @@
 package com.hone.honeweb;
 
 import com.hone.util.AppUtil;
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.GestureDetector;
+import android.view.GestureDetector.OnGestureListener;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.GestureDetector.OnGestureListener;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class FunctionActivity extends Activity implements OnTouchListener, OnGestureListener{
 	private GestureDetector gd = null;
@@ -25,14 +25,10 @@ public class FunctionActivity extends Activity implements OnTouchListener, OnGes
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_function);
-		
-		Button previous = (Button) findViewById(R.id.button1);
-		Button next = (Button) findViewById(R.id.button2);
-		previous.setOnClickListener(previousListener);
-		next.setOnClickListener(nextListener);
-		Button price = (Button) findViewById(R.id.button3);
-		Button books = (Button) findViewById(R.id.button4);
-		Button order = (Button) findViewById(R.id.button5);
+	
+		Button price = (Button) findViewById(R.id.function_price_btn);
+		Button books = (Button) findViewById(R.id.function_pubs_btn);
+		Button order = (Button) findViewById(R.id.function_order_btn);
 		price.setOnClickListener(priceListener);
 		books.setOnClickListener(booksListener);
 		order.setOnClickListener(orderListener);
@@ -43,26 +39,6 @@ public class FunctionActivity extends Activity implements OnTouchListener, OnGes
 		ll.setOnTouchListener(this);
 		ll.setLongClickable(true);
 	}
-	
-	private OnClickListener previousListener = new OnClickListener() {
-		
-		@Override
-		public void onClick(View arg0) {
-			// TODO Auto-generated method stub
-			Intent intent = new Intent(FunctionActivity.this, TeamActivity.class);	    
-		    startActivity(intent);
-	    }
-    };
-    
-    private OnClickListener nextListener = new OnClickListener() {
-		
-		@Override
-		public void onClick(View arg0) {
-			// TODO Auto-generated method stub
-			Intent intent = new Intent(FunctionActivity.this, MenuActivity.class);	    
-		    startActivity(intent);
-	    }
-    };
 
     String price = "IBMers, Customers and Business Partners need access to the pricesOf Hardware, Software  and Services. Price applications can Be used to look up the list price Of single IBM items.";
 
@@ -70,7 +46,7 @@ public class FunctionActivity extends Activity implements OnTouchListener, OnGes
 		
 		@Override
 		public void onClick(View arg0) {
-			TextView tv = (TextView)findViewById(R.id.Textview2);
+			TextView tv = (TextView)findViewById(R.id.function_details_tv);
 			tv.setText(price);
 	    }
     };
@@ -82,7 +58,7 @@ public class FunctionActivity extends Activity implements OnTouchListener, OnGes
 		
 		@Override
 		public void onClick(View arg0) {
-			TextView tv = (TextView)findViewById(R.id.Textview2);
+			TextView tv = (TextView)findViewById(R.id.function_details_tv);
 			tv.setText(books);
 	    }
     };
@@ -93,7 +69,7 @@ public class FunctionActivity extends Activity implements OnTouchListener, OnGes
 		
 		@Override
 		public void onClick(View arg0) {
-			TextView tv = (TextView)findViewById(R.id.Textview2);
+			TextView tv = (TextView)findViewById(R.id.function_details_tv);
 			tv.setText(order);
 	    }
     };
@@ -135,7 +111,6 @@ public class FunctionActivity extends Activity implements OnTouchListener, OnGes
 		}
 		else if (e2.getX()-e1.getX() > AppUtil.FLING_MIN_DISTANCE && Math.abs(velocityX) >AppUtil.FLING_MIN_VELOCITY) {
 			
-			//切换Activity
 			Intent intent = new Intent(FunctionActivity.this, TeamActivity.class);
 			intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
 			startActivity(intent);
