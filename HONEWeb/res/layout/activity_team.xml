@@ -44,8 +44,8 @@
 
     <TableRow
         android:id="@+id/tableRow1"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp" >
@@ -53,8 +53,8 @@
         <Button
             android:id="@+id/button1"
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:background="@drawable/click_on" />
 
         <TextView
@@ -65,8 +65,8 @@
         <Button
             android:id="@+id/button2"
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:background="@drawable/click_off" />
 
         <TextView
@@ -77,8 +77,8 @@
         <Button
             android:id="@+id/button3"
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:background="@drawable/click_off" />
     </TableRow>
 

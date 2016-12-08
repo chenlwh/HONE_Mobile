@@ -30,5 +30,6 @@ Of single IBM items.</string>
 Itted to the order submission system, 
 which will send it to  the fulfillment system.</string>
 	<string name="function_books"></string>
+	<string name="title_activity_team">Team Introduction</string>
 
 </resources>
