@@ -23,9 +23,13 @@ public class TeamActivity extends Activity implements OnTouchListener, OnGesture
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_team);
 		
-        Button nextpage = (Button) findViewById(R.id.button1);
+        Button nextpage1 = (Button) findViewById(R.id.button2);
+        
+        Button nextpage2 = (Button) findViewById(R.id.button3);
 		
-		nextpage.setOnClickListener(nextpageListener);
+        nextpage1.setOnClickListener(nextpageListener);
+              
+		nextpage2.setOnClickListener(nextpageListener);
 		
 		gd = new GestureDetector((OnGestureListener) this);
 		
@@ -37,12 +41,21 @@ public class TeamActivity extends Activity implements OnTouchListener, OnGesture
     private OnClickListener nextpageListener = new OnClickListener() {
 				
 		@Override
-		public void onClick(View arg0) {
+		public void onClick(View v) {
 			// TODO Auto-generated method stub
-			Intent intent = new Intent(TeamActivity.this,FunctionActivity.class);	    
-			intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-			intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
-		    startActivity(intent);
+			if(v.getId() == R.id.button2) {
+			   Intent intent = new Intent(TeamActivity.this,FunctionActivity.class);
+			   intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+			   intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+			   startActivity(intent);
+			}
+			else if(v.getId() == R.id.button3) { 
+			   Intent intent = new Intent(TeamActivity.this,MenuActivity.class);	
+			   intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+			   intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+			   startActivity(intent);	   
+			}
+			
 	    }
     };
 
