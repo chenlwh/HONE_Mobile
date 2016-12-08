@@ -10,7 +10,7 @@ package com.hone.util;
  */
 public final class AppUtil {
 	
-	public final static int FLING_MIN_DISTANCE = 20;
-	public final static int FLING_MIN_VELOCITY = 50;
+	public final static int FLING_MIN_DISTANCE = 10;
+	public final static int FLING_MIN_VELOCITY = 10;
 
 }
