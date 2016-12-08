@@ -1,35 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">HONEWeb</string>
-    <string name="welcome">welcome</string>
-    <string name="team">team introduction</string>
-    <string name="oops_content">Oops, We are fighting to fulfill.</string>
+    <string name="app_name">HONE</string>
 
-    <color name="background_color">#3399CC</color>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_team">Team Introduction</string>
+    <string name="title_activity_function">Hone Intruduction</string>
+    <string name="title_activity_menu">Applications</string>
+    <string name="title_activity_oops">Oops</string>
+    
+    <string name="function_hone">AMS HONE consists of  several Business Applications, Infrastructure Applications, Publications and ETL/XML applications running on Hone platform. Business Partners, Customers and IBM Sales from EMEA region use these applications for ordering configured products (i, p, z, and larger xSeries peripherals). Basically it connects Configurators to order fulfillment processing. It hosts about 40 applications used by 35.000 users worldwide.</string>
+    <string name="function_price">IBM’ers, Customers and Business Partners need access to the prices of Hardware, Software and Services. Price applications can be used to look up the list price of single IBM items.</string>
+	<string name="function_order">A Configuration(CFReport) can be Submitted to the order submission system, which will send it to  the fulfillment system.</string>
+	<string name="function_books"></string>
+	<string name="oops_content">Oops, We are fighting to fulfill.</string>
+	
+	<color name="background_color">#3399CC</color>
     <color name="text_color_btn">#FFFFFF</color>
     <color name="text_color_exp">#ADADAD</color>
     <color name="text_color_menu">#0A0A0A</color>
     <color name="background_btn">#0000CD</color>
     <color name="background_btn_1">#CAFF70</color>
-
-    <string name="title_activity_function">Hone Intruduction</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_menu">MenuActivity</string>
-    <string name="title_activity_oops">OopsActivity</string>
-    <string name="function_hone">AMS HONE consists of  several Business Applications, Infrastructure Applications, Publications and ETL/XML applications running on Hone platform.
-Business Partners, Customers and IBM Sales from EMEA region use these applications for ordering configured products (i, p, z, and larger xSeries peripherals). Basically it connects Configurators to order fulfillment processing. It hosts about 40 applications used by 35.000 users worldwide.</string>
-    <string name="function_price">IBM’ers, Customers and Business 
-Partners need access to the prices
-Of Hardware, Software  and 
-Services. Price applications can 
-Be used to look up the list price 
-Of single IBM items.</string>
-	<string name="function_order">A Configuration(CFReport) can be Subm-
-Itted to the order submission system, 
-which will send it to  the fulfillment system.</string>
-	<string name="function_books"></string>
-	<string name="title_activity_team">Team Introduction</string>
 
 </resources>
