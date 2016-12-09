@@ -10,28 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.hone.honeweb.TeamActivity" >
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/tableRow1"
-        android:layout_alignLeft="@+id/textView1"
-        android:text="Netherlands HONELINK Mailbox/Netherlands/IBM"
-        android:textColor="@color/text_color_btn"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp"
-        android:scaleType="fitXY"
-        android:text="AMS HONE team is a part of CIO Sales Support Tribe. We are categorized into Business Applications (including Publications) and Infrastructure Applications.Do you have new requests or changes for our applications? Then please contact:"
-        android:textColor="@color/text_color_btn"
-        android:textSize="18sp" />
-
 
 
     <TableRow
@@ -73,5 +51,27 @@
             android:layout_height="10dp"
             android:background="@drawable/click_off" />
     </TableRow>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:text="AMS HONE team is a part of CIO Sales Support Tribe. We are categorized into Business Applications (including Publications) and Infrastructure Applications.Do you have new requests or changes for our applications? Then please contact:"
+        android:textColor="@color/text_color_btn"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tableRow1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginBottom="30dp"
+        android:text="Netherlands HONELINK Mailbox/Netherlands/IBM"
+        android:textColor="@color/text_color_btn"
+        android:textSize="20sp" />
 
 </RelativeLayout>
