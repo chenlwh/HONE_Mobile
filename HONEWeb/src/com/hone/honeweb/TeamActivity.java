@@ -2,6 +2,7 @@ package com.hone.honeweb;
 
 import com.hone.util.AppUtil;
 
+import android.R.string;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
@@ -23,12 +24,10 @@ public class TeamActivity extends Activity implements OnTouchListener, OnGesture
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_team);
 		
-        Button nextpage1 = (Button) findViewById(R.id.button2);
-        
+        Button nextpage1 = (Button) findViewById(R.id.button2);        
         Button nextpage2 = (Button) findViewById(R.id.button3);
 		
-        nextpage1.setOnClickListener(nextpageListener);
-              
+        nextpage1.setOnClickListener(nextpageListener);              
 		nextpage2.setOnClickListener(nextpageListener);
 		
 		gd = new GestureDetector((OnGestureListener) this);
@@ -44,18 +43,17 @@ public class TeamActivity extends Activity implements OnTouchListener, OnGesture
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
 			if(v.getId() == R.id.button2) {
-			   Intent intent = new Intent(TeamActivity.this,FunctionActivity.class);
-			   intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-			   intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
-			   startActivity(intent);
+			  Intent intent = new Intent(TeamActivity.this,FunctionActivity.class);
+			  intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+			  intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+			  startActivity(intent);
 			}
-			else if(v.getId() == R.id.button3) { 
-			   Intent intent = new Intent(TeamActivity.this,MenuActivity.class);	
-			   intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-			   intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
-			   startActivity(intent);	   
-			}
-			
+			else if(v.getId() == R.id.button3) { 			   
+			  Intent intent = new Intent(TeamActivity.this,MenuActivity.class);
+			  intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+			  intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+			  startActivity(intent);  
+			}						
 	    }
     };
 
