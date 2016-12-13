@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.widget.Button;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class FunctionActivity extends Activity implements OnTouchListener, OnGestureListener{
@@ -33,7 +33,7 @@ public class FunctionActivity extends Activity implements OnTouchListener, OnGes
 		
 		gd = new GestureDetector((OnGestureListener) this);
 		
-		RelativeLayout ll = (RelativeLayout) findViewById(R.id.function_layout);
+		LinearLayout ll = (LinearLayout) findViewById(R.id.function_layout);
 		ll.setOnTouchListener(this);
 		ll.setLongClickable(true);
 	}

@@ -1,76 +1,68 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/function_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/function_layout"
     android:background="@drawable/background"
+    android:orientation="vertical"
     tools:context="com.hone.honeweb.FunctionActivity" >
 
     <TextView
         android:id="@+id/function_introduction_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
         android:layout_margin="16dp"
         android:text="@string/function_hone"
         android:textColor="@color/text_color_btn"
-        android:textSize="14sp" />
+        android:textSize="18sp" />
 
-      <TextView
-          android:id="@+id/function_details_tv"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:layout_marginBottom="60dp"
-          android:layout_marginLeft="20dp"
-          android:layout_marginRight="20dp"
-          android:layout_marginStart="60dp"
-          android:layout_marginTop="330dp"
-          android:ems="10"
-          android:text="@string/function_price"
-          android:textColor="@color/text_color_menu"
-          android:textSize="12sp" >
-          
-      </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal" >
 
-      <Button
-          android:id="@+id/function_order_btn"
-          android:layout_width="60dp"
-          android:layout_height="60dp"
-          android:layout_below="@+id/function_introduction_tv"
-          android:layout_centerHorizontal="true"
-          android:layout_marginStart="60dp"
-          android:layout_marginTop="14dp"
-          android:background="@drawable/function_order" />
+        <Button
+            android:id="@+id/function_price_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/function_price" />
 
-      <Button
-          android:id="@+id/function_price_btn"
-          android:layout_width="60dp"
-          android:layout_height="60dp"
-          android:layout_alignBaseline="@+id/function_order_btn"
-          android:layout_alignBottom="@+id/function_order_btn"
-          android:layout_alignLeft="@+id/function_introduction_tv"
-          android:layout_marginStart="0dp"
-          android:background="@drawable/function_price" />
+        <Button
+            android:id="@+id/function_order_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/function_order" />
 
-      <Button
-          android:id="@+id/function_pubs_btn"
-          android:layout_width="60dp"
-          android:layout_height="60dp"
-          android:layout_alignBaseline="@+id/function_order_btn"
-          android:layout_alignBottom="@+id/function_order_btn"
-          android:layout_alignRight="@+id/function_introduction_tv"
-          android:layout_marginStart="200dp"
-          android:background="@drawable/function_pubs" />
-      
-      <TableRow
-        android:id="@+id/tableRow1"
-        android:layout_width="80dp"
-        android:layout_height="20dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp" >
+        <Button
+            android:id="@+id/function_pubs_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/function_pubs" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/function_details_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:text="@string/function_price"
+        android:textColor="@color/text_color_menu"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center_horizontal" >
 
         <Button
             android:id="@+id/button5"
@@ -82,7 +74,7 @@
         <TextView
             android:id="@+id/textView6"
             android:layout_width="20dp"
-            android:layout_height="20dp" />
+            android:layout_height="30dp" />
 
         <Button
             android:id="@+id/button6"
@@ -94,7 +86,7 @@
         <TextView
             android:id="@+id/textView7"
             android:layout_width="20dp"
-            android:layout_height="20dp" />
+            android:layout_height="30dp" />
 
         <Button
             android:id="@+id/button7"
@@ -102,6 +94,6 @@
             android:layout_width="10dp"
             android:layout_height="10dp"
             android:background="@drawable/click_off" />
-    </TableRow>
+    </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

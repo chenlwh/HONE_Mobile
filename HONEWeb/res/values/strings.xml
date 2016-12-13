@@ -9,6 +9,8 @@
     <string name="title_activity_menu">Applications</string>
     <string name="title_activity_oops">Oops</string>
     
+    <string name="team_introduction">AMS HONE team is a part of CIO Sales Support Tribe. We are categorized into Business Applications (including Publications) and Infrastructure Applications.Do you have new requests or changes for our applications? Then please contact:</string>
+    <string name="team_mail">Netherlands HONELINK Mailbox/Netherlands/IBM</string>
     <string name="function_hone">AMS HONE consists of  several Business Applications, Infrastructure Applications, Publications and ETL/XML applications running on Hone platform. Business Partners, Customers and IBM Sales from EMEA region use these applications for ordering configured products (i, p, z, and larger xSeries peripherals). Basically it connects Configurators to order fulfillment processing. It hosts about 40 applications used by 35.000 users worldwide.</string>
     <string name="function_price">IBM’ers, Customers and Business Partners need access to the prices of Hardware, Software and Services. Price applications can be used to look up the list price of single IBM items.</string>
 	<string name="function_order">A Configuration(CFReport) can be Submitted to the order submission system, which will send it to  the fulfillment system.</string>

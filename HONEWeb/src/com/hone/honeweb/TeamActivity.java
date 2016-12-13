@@ -2,7 +2,6 @@ package com.hone.honeweb;
 
 import com.hone.util.AppUtil;
 
-import android.R.string;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
@@ -14,7 +13,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.widget.Button;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 
 public class TeamActivity extends Activity implements OnTouchListener, OnGestureListener{
 	private GestureDetector gd = null;
@@ -32,7 +31,7 @@ public class TeamActivity extends Activity implements OnTouchListener, OnGesture
 		
 		gd = new GestureDetector((OnGestureListener) this);
 		
-		RelativeLayout ll = (RelativeLayout) findViewById(R.id.team_layout);
+		LinearLayout ll = (LinearLayout) findViewById(R.id.team_layout);
 		ll.setOnTouchListener(this);
 		ll.setLongClickable(true);
 	}

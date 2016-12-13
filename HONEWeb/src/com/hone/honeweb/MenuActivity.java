@@ -39,6 +39,15 @@ public class MenuActivity extends Activity implements OnTouchListener, OnGesture
 		LinearLayout ll = (LinearLayout) findViewById(R.id.menu_layout);
 		ll.setOnTouchListener(this);
 		ll.setLongClickable(true);
+		
+		priceButton.setOnTouchListener(this);
+		priceButton.setLongClickable(true);
+		orderButton.setOnTouchListener(this);
+		orderButton.setLongClickable(true);
+		softwareButton.setOnTouchListener(this);
+		softwareButton.setLongClickable(true);
+		publicationsButton.setOnTouchListener(this);
+		publicationsButton.setLongClickable(true);
 	}
 	
 	
