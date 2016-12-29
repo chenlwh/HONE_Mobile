@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+    <item>Austria</item>
+    <item>Belgium</item>
+    <item>CE</item>
+    <item>Cyprus</item>
+    <item>Czech Ripublic</item>
+    <item>Denmark</item>
+    <item>Egypt</item>
+    <item>Finland</item>
+    <item>France</item>
+    <item>Germany</item>
+    <item>Greece</item>
+    <item>Gulf states</item>
+    <item>Iraq</item>
+    <item>Ireland</item>
+    <item>Israel</item>
+    <item>Italy</item>
+    <item>Jordan</item>
+    <item>Lebanon</item>
+    <item>Morocco</item>
+    <item>Netherlands</item>
+    <item>Norway</item>
+    <item>Pakistan</item>
+    <item>Poland</item>
+    <item>Portugal</item>
+    <item>Russia-CIS</item>
+    <item>Saudi Arabia</item>
+    <item>Slovakia</item>
+    <item>Slovenia</item>
+    <item>South Africa</item>
+    <item>Spain</item>
+    <item>Sweden</item>
+    <item>Switzerland</item>
+    <item>Turkey</item>
+    <item>United Kingdom</item>
+    </string-array>    
+</resources>
