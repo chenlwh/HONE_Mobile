@@ -12,7 +12,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher1"
         android:label="@string/app_name"
-        android:theme="@android:style/MediaButton.Previous" android:logo="@drawable/ic_launcher1">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".WelcomeActivity"
             android:label="@string/title_activity_welcome" >
@@ -37,6 +37,14 @@
         <activity
             android:name=".OopsActivity"
             android:label="@string/title_activity_oops" >
+        </activity>
+        <activity
+            android:name=".Soft1Activity"
+            android:label="@string/title_activity_soft1" >
+        </activity>
+        <activity
+            android:name=".Soft2Activity"
+            android:label="@string/title_activity_soft2" >
         </activity>
     </application>
 
