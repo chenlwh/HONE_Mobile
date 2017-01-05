@@ -1,26 +1,26 @@
 package com.hone.util;
 
 public class Person {
-	  private String program;
-	  private String function;
+	  private String arg1;
+	  private String arg2;
 	  public Person() {
 	    super();
 	  }
 	  public Person(String program, String function) {
 	    super();
-	    this.program = program;
-	    this.function = function;
+	    this.arg1 = program;
+	    this.arg2 = function;
 	  }
 	  public String getProgram() {
-	    return program;
+	    return arg1;
 	  }
 	  public void setProgram(String program) {
-	    this.program = program;
+	    this.arg1 = program;
 	  }
 	  public String getFunction() {
-	    return function;
+	    return arg2;
 	  }
 	  public void setFunction(String function) {
-	    this.function = function;
+	    this.arg2 = function;
 	  }
 	}

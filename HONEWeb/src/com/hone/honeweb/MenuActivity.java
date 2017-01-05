@@ -28,8 +28,9 @@ public class MenuActivity extends Activity implements OnTouchListener, OnGesture
 		ImageButton publicationsButton = (ImageButton) findViewById(R.id.publications);
 		
 		OnClickListener oopsClickListenter = new OopsClickListener();
+		OnClickListener soft1ClickListenter = new Soft1ClickListener();
 		
-		priceButton.setOnClickListener(oopsClickListenter);
+		priceButton.setOnClickListener(soft1ClickListenter);
 		orderButton.setOnClickListener(oopsClickListenter);
 		softwareButton.setOnClickListener(oopsClickListenter);
 		publicationsButton.setOnClickListener(oopsClickListenter);
@@ -61,6 +62,16 @@ public class MenuActivity extends Activity implements OnTouchListener, OnGesture
 		}
 		
 	}
+	
+	class Soft1ClickListener implements OnClickListener{
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			Intent intent = new Intent(MenuActivity.this,Soft1Activity.class);
+			startActivity(intent);
+			
+		}
+	}	
 
 
 	/* (non-Javadoc)

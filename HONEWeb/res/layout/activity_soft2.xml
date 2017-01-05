@@ -22,7 +22,7 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/soft2_but1"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@drawable/back" />

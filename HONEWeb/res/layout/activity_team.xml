@@ -11,7 +11,7 @@
     tools:context="com.hone.honeweb.TeamActivity" >
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/spinnerview1"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="5" />
@@ -43,7 +43,7 @@
         android:gravity="bottom|center_horizontal" >
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/price_soft_but1"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="10dp"
             android:layout_height="10dp"

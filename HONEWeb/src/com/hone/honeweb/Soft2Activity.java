@@ -7,10 +7,13 @@ import com.hone.util.Person;
 
 import android.app.Activity;
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -20,13 +23,26 @@ private PriceAdapter priceAdapter = null;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-//		setContentView(R.layout.activity_soft2);
+		setContentView(R.layout.activity_soft2);
+		
+		Button backButton = (Button) findViewById(R.id.soft2_but1);		
+		backButton.setOnClickListener(backButtonListener);
 		
 	    initData();
 	    priceAdapter =new PriceAdapter(Soft2Activity.this, R.layout.activity_soft2, persons);
 	    setListAdapter(priceAdapter);
 	    registerForContextMenu(getListView());
 	}
+	
+	private OnClickListener backButtonListener = new OnClickListener() {
+		
+		@Override
+		public void onClick(View arg0) {
+			// TODO Auto-generated method stub			
+			    Intent intent = new Intent(Soft2Activity.this,Soft1Activity.class);
+				startActivity(intent);
+		}
+	};	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
